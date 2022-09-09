@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0; 
+  font-family: Rubik mono one;
+}
+  
+a{
+  color: #E9E9E9;
+  text-decoration: none;
+}
+
+.web-container{
+  background: url("images/war2.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+  
+.header-container{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-button{
+  color: #E9E9E9;
+  height: 30px;
+  width: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+ 
+.page-title{
+  font-size: 30px; 
+  text-align: center;
+  filter: drop-shadow(5px 5px 20px);
+ 
+}
+  
+.navbar-icon{
+  color: #E9E9E9;
+  height: 30px;
+  width: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.information-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.information-tooltip-text{
+  visibility: hidden;
+  width: 200px;
+  height: 75px;
+  font-size: 16px;
+  background-color: black;
+  color: #EBEBEB;
+  text-align: center;
+  border-radius: 6px;
+  padding: 12px;
+  filter: drop-shadow(5px 5px 20px black);
+  /*Position the tooltip*/
+  position: absolute;
+      z-index: 1;
+      top: 1.5rem;;
+      right: 5%;
+      
+}
+
+.navbar-icon:hover .information-tooltip-text{
+  visibility: visible;
+}
+
+.information-tooltip-text a{
+  color: #EBEBEB;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.information-tooltip-text a:hover {background-color: #f1f1f1}
+
+
+
+.banner-container{
+  height: 25vh;
+  margin: 0 auto; 
+  width: 50%;
+  font-size: 20px; 
+  display: flex;
+  align-items: center;
+  color: #E9E9E9;
+  filter: drop-shadow(5px 5px 20px black);
+ 
+  
+}
+
+.main-container{
+  color: #E9E9E9;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+#cat-image, #dog-image, #rodent-image, #reptile-image{
+  height: 250px;
+  width: 250px;
+  border: black solid 5px;
+  border-radius: 5px;
+  transition: width 1s, height 1s;
+}
+
+#cat-image:hover, #dog-image:hover, #rodent-image:hover, #reptile-image:hover{
+  width: 300px;
+  height: 300px;
+}
+
+/* -------------------------- Animal pictures style start------------------------*/  
+
+#cat-image{
+  object-fit: cover;
+  object-position: 90% 70%;
+  filter: brightness(1.5) drop-shadow(5px 5px 15px black);
+}
+  
+#dog-image {
+  object-fit: cover;
+  object-position: 90% 70%;
+  filter: brightness(0.9) grayscale(75%) drop-shadow(5px 5px 15px black);
+    
+}
+  
+#reptile-image{
+  transform: rotate(90deg); 
+  object-fit: cover;
+  object-position: 70% 70%;
+  filter: drop-shadow(5px 5px 15px black);
+}
+  
+#rodent-image{
+  filter: grayscale(75%) drop-shadow(5px 5px 15px black);
+  object-fit: cover;
+  object-position: 50% 45%;
+  
+}
+
+/* -------------------------- Animal pictures style end------------------------*/ 
+  
+
+.donate-container{
+  color: #E9E9E9;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+  
+.donate-btn-pp, .donate-btn-credit{
+  height: 10vh;
+  width: 35vh;
+  border-radius: 4px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  filter: drop-shadow(5px 5px 20px black);
+  
+}
+#cc-text, #pp-text{
+  padding: 20px 10px;
+  margin: 30px;
+}
+  
+
+.about-container{
+  color: #E9E9E9;
+  height: 30vh;
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  width: 60%;
+}
+  
+.footer-container{
+  color: #E9E9E9;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  background-color: black;
+}

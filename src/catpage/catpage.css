@@ -1,0 +1,100 @@
+*{
+ margin: 0;
+ padding: 0; 
+ font-family: Rubik mono one;
+ 
+ 
+}
+.cat-container{
+  background: url("./war2.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+  
+#cat-image{
+  height: 250px;
+  width: 250px;
+  border: black solid 5px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: 90% 70%;
+  filter: brightness(1.5) drop-shadow(5px 5px 15px black);
+}
+
+*{
+  margin: 0;
+  padding: 0; 
+  font-family: Rubik mono one;
+}
+
+
+  .header-container{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .banner-container{
+    height: 300px;
+    margin: 0 auto; 
+    width: 300px;
+    font-size: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E9E9E9;
+    filter: drop-shadow(5px 5px 20px black);
+   
+    
+  }
+
+  #input-area{
+    color: pink;
+
+  }
+  #submit-button{
+    text-decoration: none
+  }
+
+.main-container{
+    color: #E9E9E9;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: darkblue;
+  }
+  .form-container{
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #submit-button{
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  
+  .about-container{
+    color: #E9E9E9;
+    height: 30vh;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 60%;
+  }
+    
+  .footer-container{
+    color: #E9E9E9;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: black;
+  }

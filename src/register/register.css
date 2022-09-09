@@ -1,0 +1,33 @@
+.user-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.cat-image{
+    height: 250px;
+    width: 250px;
+    border: black solid 5px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: 90% 70%;
+    filter: brightness(1.5) drop-shadow(5px 5px 15px black);
+  }
+
+  .darkMode{
+    background-color: aqua;
+
+
+  }

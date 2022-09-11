@@ -1,3 +1,14 @@
+
+fetch(`https://petrescuenow.herokuapp.com/users`)
+.then((res)=>console.log(res))  
+
+
+
+
+
+/*
+
+
 const http = require("http");
 const host = 'localhost';
 const port = 8000;
@@ -11,12 +22,11 @@ app.use(bodyParser.json()) //make it understand what json "do"
 app.get("/", (req, res)=>{ // endpoint med bara forward slash / är hemsidan. 
     res.status(200).json({message:"Welcome to the server"})
 })
-/*
-fetch(`http://localhost:5000/users?q=magnus1`)
-.then((res)=>console.log(res))  
-*/
+
 
 app.listen(port, ()=>{
     console.log(`Server is running at port ${port}`)
     
 })
+
+*/

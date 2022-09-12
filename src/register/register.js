@@ -1,10 +1,10 @@
-let imageChanger = document.getElementById("image-changer")
+// let imageChanger = document.getElementById("image-changer")
 
 const registerForm = document.getElementById("register-form"); 
 const userInput = document.getElementById("user-input")
 let userName = document.getElementById("user-name")
 
-let imageInput = document.getElementById("img-upload")
+
 //let userID = "";
 
 registerForm.addEventListener('submit', (event)=>{
@@ -19,14 +19,21 @@ registerForm.addEventListener('submit', (event)=>{
 .catch(err=>console.log(err))  
 })
 
-imageInput.addEventListener("click", ()=>{
-
-} )
 
 
+// -------- Animal image upload--------------------//
 
+/*
+let imageInput = document.getElementsById("new-image")
 
+function uploadImage(){
+let newImage = document.createElement('img')
+let imageUpload = document.getElementById("img-upload")
+newImage.innerHTML = imageUpload.value;
+imageInput.appendchild(newImage);
+}
 
+*/
 
 /*
 //--------- I "sliding" gallery ----------//
@@ -35,7 +42,7 @@ imageInput.addEventListener("click", ()=>{
 //button3.onclick = changeImage; // connecta med id
 //button3.addEventListener("click", changeImage)  // eller gör såhär med eventlistener sprint 13: 0500
 imageChanger.addEventListener("click", ()=>{ // 07:00 i sprint 13 () Man behöver inte ge ett namn i parentesen om det bara används en gång
-  
+
 //om functionen/knappen ska användas EN gång är den sista bäst. Men ska den användas fler gånger ta en annan 
   let image = document.querySelector("img") //access img from the DOM (kan vara id eller class)sparar i en varibel
   image.setAttribute("src", allImages[indexNumber]) // 10:00 sprint 12 Här andrar vi attributet. setAttribute. // Kan skapa ett som inte finns eller ändra ett som finns 
@@ -66,11 +73,7 @@ function getUser(){
 
 //-----------Dark mode test code---------// 
 
-
 function toggleDarkMode(){
   let container = document.querySelector("#dark-mode")
-
   container.classList.toggle("darkMode"); //TOGGLE 23:00 sprint 12
-  
-
 }

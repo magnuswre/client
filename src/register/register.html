@@ -13,19 +13,28 @@
     <div class="user-container">
         <div class="image-container"> 
           <img src="images\cat.jpg" alt="" class="cat-image">
-          <button id="btn1">change image</button> 
+          <button id="image-changer" type="submit">change image</button> 
         </div> 
 
+
+        
+
         <div> 
-        <button id="btn2">submit</button>
-        <label for="register">skriv ditt namn</label>
-        <input type="placeholder" id="register" type="text"  >
-        <p id="username"></p>
-         </div>
+            <form id="register-form" action="">
+                <label for="register">skriv ditt namn</label>
+                <input type="placeholder" id="register" type="text">
+                
+                <button type="submit">submit</button>
+                <h1>your name: <span id="user-name"></span> </h1>
+                
+            </form>
+        </div>
         <div class="dark-mode">
             <button onclick="toggleDarkMode()">darkmode</button>
             
-        </div>
+             </div>
+
+            
     </div>
     
 

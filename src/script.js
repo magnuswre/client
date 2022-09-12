@@ -1,6 +1,16 @@
+// 29:00 in AJAX
 
-fetch(`https://petrescuenow.herokuapp.com/users`)
-.then((res)=>console.log(res))  
+const https = 'https://petrescuenow.herokuapp.com/users' 
+
+
+fetch(`${https}`)
+.then((response)=> response.json())
+.then((data)=>{
+    console.log(data)
+})
+.catch(err=>console.log(err))  
+
+
 
 
 

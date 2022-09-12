@@ -1,5 +1,5 @@
 // 29:00 in AJAX
-
+/*
 const https = 'https://petrescuenow.herokuapp.com/users' 
 
 
@@ -11,7 +11,7 @@ fetch(`${https}`)
 .catch(err=>console.log(err))  
 
 
-
+*/
 
 
 

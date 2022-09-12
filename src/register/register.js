@@ -5,8 +5,6 @@ const userInput = document.getElementById("user-input")
 let userName = document.getElementById("user-name")
 //let userID = "";
 
-
-
 registerForm.addEventListener('submit', (event)=>{
   event.preventDefault();
   userID=userInput.value
@@ -20,11 +18,6 @@ registerForm.addEventListener('submit', (event)=>{
 })
 
 
-
-
-
-  // function changeImage(){} det här var funktionen   
-  
 // TRE VARIANTER add a function ta a button. 
 //button3.onclick = changeImage; // connecta med id
 //button3.addEventListener("click", changeImage)  // eller gör såhär med eventlistener sprint 13: 0500
@@ -55,7 +48,7 @@ let indexNumber = 1; // det här blir nästa indexnummer från allImages när kn
 }*/
 
 function toggleDarkMode(){
-  let container = document.querySelector(".dark-mode")
+  let container = document.querySelector("#dark-mode")
 
   container.classList.toggle("darkMode"); //TOGGLE 23:00 sprint 12
   

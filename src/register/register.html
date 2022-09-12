@@ -10,47 +10,36 @@
 </head>
 <body>
 
-    <div class="user-container">
+    <div class="user-container" id="dark-mode">
         <div class="image-container"> 
           <img src="images\cat.jpg" alt="" class="cat-image">
           <button id="image-changer" type="submit">change image</button> 
         </div> 
 
-
-        
-
-        <div class="dark-mode"> 
+      <div > 
             <form id="register-form" action="">
-                <label for="register">skriv ditt namn</label>
+                <label for="register">Enter you fullname here:</label>
                 <input type="placeholder" id="user-input" type="text">
-                
                 <button type="submit">submit</button>
                 <h1>your name: <span id="user-name"></span> </h1>
-                
             </form>
         </div>
         <div>
             <button onclick="toggleDarkMode()">darkmode</button>
-            
         </div>
-
-            
-    </div>
     
-
-<div>
-<form action="">
     <div>
-    <label for="fullname"> Full name </label>
-    <input type="text" name="" id="fullname" placeholder="this is optional">
-    
-</div>
+      <form action="">
+     <div>
+      <label for="fullname"> Full name </label>
+      <input type="text" name="" id="fullname" placeholder="this is optional">
+     </div>
 
-<div>
+   <div>
     <label for="img-upload"> Upload image </label>  
     <input type="file" name="" id="img-upload"> 
-</div>
-<div>
+    </div>
+    <div>
     <label for="animal">Choose animal</label>
     <select name="animal" id="animal">
         <option value="cat">Cat</option>
@@ -58,11 +47,12 @@
         <option value="rodent">Rodent</option>
         <option value="reptile">Reptile</option>
     </select> 
-</div>
-<div>
+   </div>
+   <div>
     <input type="submit" value="Submit">
 </div>
 </form>
+</div>
 </div>
  
     <script src="register.js"></script>

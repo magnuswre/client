@@ -6,17 +6,22 @@ let userName = document.getElementById("user-name")
 
 
 //let userID = "";
+let myUserName; 
+userInput.addEventListener('input', (event)=>{
+  event.preventDefault();
+  myUserName = event.target.value
+})
 
 registerForm.addEventListener('submit', (event)=>{
   event.preventDefault();
-  userID=userInput.value
-  fetch(`https://petrescuenow.herokuapp.com/users?q=${userID}`)
+  
+  fetch(`https://petrescuenow.herokuapp.com/users/${myUserName}`)
   .then((response)=> response.json())
   .then((data)=>{
-  userName.innerHTML = data.id;
+  userName.innerHTML = data.username;
   
 })
-.catch(err=>console.log(err))  
+.catch(err=>console.log(err)) // Lägg till här att det kommer ett meddelande att användare inte finns  
 })
 
 

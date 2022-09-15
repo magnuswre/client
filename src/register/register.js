@@ -1,5 +1,17 @@
 // let imageChanger = document.getElementById("image-changer")
 
+
+// -----------------REGISTRATE NEW USER--------------------// 
+
+
+
+
+
+
+
+
+//----------------LOGIN EXISTING USER -------------------//
+
 const registerForm = document.getElementById("register-form"); 
 const userInput = document.getElementById("user-input")
 let userName = document.getElementById("user-name")

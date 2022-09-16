@@ -1,9 +1,11 @@
 // let imageChanger = document.getElementById("image-changer")
 
-// -----------------REGISTRATE NEW USER--------------------// 
+// -----------------REGISTER/CREATE NEW USER--------------------// 
 let inputFullname = document.getElementById("input-fullname")
 let inputEmail = document.getElementById("input-email")
 
+
+const inputData = { inputFullname, inputEmail };
 
 const data = { username: 'example' };
 
@@ -23,11 +25,7 @@ fetch('https://petrescuenow.herokuapp.com/users/register', {
   });
 
 
-
-
-
-
-//----------------LOGIN EXISTING USER -------------------//
+  //----------------LOGIN EXISTING USER -------------------//
 
 const registerForm = document.getElementById("register-form"); 
 const userInput = document.getElementById("user-input")

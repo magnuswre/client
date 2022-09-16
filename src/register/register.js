@@ -1,9 +1,10 @@
 // let imageChanger = document.getElementById("image-changer")
 
-
 // -----------------REGISTRATE NEW USER--------------------// 
+let inputFullname = document.getElementById("input-fullname")
+let inputEmail = document.getElementById("input-email")
 
-/*
+
 const data = { username: 'example' };
 
 fetch('https://petrescuenow.herokuapp.com/users/register', {
@@ -21,7 +22,7 @@ fetch('https://petrescuenow.herokuapp.com/users/register', {
     console.error('Error:', error);
   });
 
-*/
+
 
 
 
@@ -32,8 +33,6 @@ const registerForm = document.getElementById("register-form");
 const userInput = document.getElementById("user-input")
 let userName = document.getElementById("user-name")
 
-
-//let userID = "";
 let myUserName; 
 userInput.addEventListener('input', (event)=>{
   event.preventDefault();

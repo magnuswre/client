@@ -1,28 +1,28 @@
 // let imageChanger = document.getElementById("image-changer")
 
 // -----------------REGISTER/CREATE NEW USER--------------------// 
-let inputFullname = document.getElementById("input-fullname")
-let inputEmail = document.getElementById("input-email")
+// let inputFullname = document.getElementById("input-fullname")
+// let inputEmail = document.getElementById("input-email")
 
 
-const inputData = { inputFullname, inputEmail };
+// const inputData = { inputFullname, inputEmail };
 
-const data = { username: 'example' };
+// const data = { username: 'example' };
 
-fetch('https://petrescuenow.herokuapp.com/users/register', {
-  method: 'POST', // or 'PUT'
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(data),
-})
-  .then((response) => response.json())
-  .then((data) => {
-    console.log('Success:', data);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  });
+// fetch('https://petrescuenow.herokuapp.com/users/register', {
+//   method: 'POST', // or 'PUT'
+//   headers: {
+//     'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(data),
+// })
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log('Success:', data);
+//   })
+//   .catch((error) => {
+//     console.error('Error:', error);
+//   });
 
 
   //----------------LOGIN EXISTING USER -------------------//

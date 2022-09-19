@@ -10,46 +10,69 @@
 </head>
 
 <body class="cat-container">
+    <div class="header-container">
+
+    </div>
     
-</div>
-<div class="header-container"></div>
+    <div class="banner-container">
+        <img src="./cat.jpg" id="cat-image" alt="">
+    </div>
+  //----------UPLOAD FORM. ANIMAL ETC----------//  
 
-<div class="banner-container">
-    <img src="./cat.jpg" id="cat-image" alt="">
-</div>
 
-<div class="main-container">
-    <form action="" class="form-container">
+    <div class="main-container">
+        <form action="" id="form-container">
+            <div>
+                <p>Your position:</p>
+                <p>map</p>
+            </div>
+            
+            <div>
+                <p id="description">Description:</p>
+                <label for="form-container">
+                <textarea name="input-area" cols="90%" rows="6fr" id="input-area" type="" placeholder="text">
+
+                </textarea>
+            </label>
+            </div>
+            
+            <div>
+                <p>Upload picture:</p>
+            </div>
+            <div class="picture-upload">
+                <label for="picture-upload">
+                    <input type="file" id="picture-upload" name="filename" value="hej">
+                    <input type="submit" value="upload">
+                </label>
+            </div>
+
+            <div>
+                <label for="animal">Choose animal</label>
+                <select name="animal" id="animal">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="rodent">Rodent</option>
+                    <option value="reptile">Reptile</option>
+                    <option value="other">Other</option>
+                </select> 
+            
+            <div class="submit">
+                <a href="" id="submit-button" type="submit">send</a>
+            </div>
+
+            <h3>your Info <span id="user-name"></span> </h3>
+        </form>
+    
+    </div>
+    
+    <div class="about-container">
         <div>
-           <p>Your position:</p>
-           <p>map</p>
-        </div>
-
-        <div>
-            <p id="description">Description:</p>
-            <label for="form-container"></label>
-            <textarea name="input-area" cols="90%" rows="6fr" id="input-area" type="" placeholder="text">
-            </textarea>
-        </div>
-
-        <div>
-            <p>Upload picture:</p>
-        </div>
-         <div class="picture-upload">
-            <label for="picture-upload">
-            <input type="file" id="picture-upload" name="filename" value="hej">
-            <input type="submit" value="upload">
-        </label>
+            
         </div>
         
-        <div class="submit">
-             <a href="" id="submit-button" type="submit">send</a>
+        <div class="footer-container">
+
         </div>
-    </form>
-</div>
-<div class="about-container"><div>
-    
-     </div>
-<div class="footer-container"></div>
-</body>
+  <script src="cat.js"></script>
+ </body>
 </html>

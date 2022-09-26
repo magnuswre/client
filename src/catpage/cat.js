@@ -1,14 +1,22 @@
-let placeholder = document.getElementById("insert-text")
-let tillbakaText = document.getElementById("tillbaka-text")
-let btn = document.getElementById("submit")
-let svarsContainer = document.getElementById("svars-container")
+let container = document.getElementById("test-upload-container");
+let insertText = document.getElementById("insert-text");
+let btn = document.getElementById("submit");
+let animal = document.getElementById("animal");
+ 
+// let svarsContainer = document.getElementById("svars-container")
 
-btn.onclick = visaText 
-// function visaText(){
-//     console.log(placeholder)
+// btn.onclick = visaText 
+// // function visaText(){
+// //     console.log(placeholder)
+// // }
 
-// }
 
+
+fetch(`https://petrescuenow.herokuapp.com/animals`)
+.then((response)=> response.json())
+.then((data)=> console.log(data))
+//   userName.innerHTML = data.username;
+.catch(err=>console.log(err)) // Lägg till här att det kommer ett meddelande att användare inte finns  
 
 
 

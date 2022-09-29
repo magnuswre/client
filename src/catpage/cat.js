@@ -1,3 +1,7 @@
+// Info om att göra ett formulär https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+
+
+
 let container = document.getElementById("test-upload-container");
 let insertText = document.getElementById("insert-text");
 let btn = document.getElementById("submit");
